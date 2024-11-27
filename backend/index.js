@@ -21,9 +21,9 @@ app.post("/login", (req, res)=>{
     //if (req.query.username === username && Number(req.query.password) === password)
     if(req.body.username === username && Number(req.body.password) === password)
     {
-        res.status(200).send(true)
+        res.send(true)
     } else {
-        res.status(404).send(false)
+        res.send(false)
     }
 })
 
